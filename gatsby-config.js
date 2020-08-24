@@ -22,6 +22,14 @@ module.exports = {
         path: `${__dirname}/src/images`
       }
     },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `jsons`,
+        path: `${__dirname}/src/jsons`
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
