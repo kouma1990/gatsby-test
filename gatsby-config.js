@@ -35,6 +35,18 @@ module.exports = {
         icon: `src/images/icon.png`
       }
     },
-    `gatsby-plugin-offline`
+    `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-modal-routing`,
+      options: {
+        modalProps: {
+          style: {
+            overlay: {
+              backgroundColor: `rgba(0, 0, 0, 0.75)`
+            }
+          }
+        }
+      }
+    }
   ],
 }

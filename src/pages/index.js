@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import { Link } from 'gatsby-plugin-modal-routing'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,6 +9,12 @@ import SEO from "../components/seo"
 export default ({ data }) => (
   <Layout>
     <SEO />
+    <Link
+      to="/modal/"
+      asModal
+    >
+      Login
+    </Link>
     <section className="hero">
       <figure>
         <Img fluid={data.hero.childImageSharp.fluid} alt="" style={{ height: "100%" }} />
